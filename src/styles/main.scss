@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// $primary: $pink;
+// $primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+@import "../node_modules/bulma/bulma";
+
+.navbar {
+  margin: 0 10rem;
+
+  a {
+    color: #111;
+    text-transform: uppercase;
+  }
+
+  .router-link-exact-active {
+    font-weight: bold;
+  }
+}
+
+.logo {
+  width: 185px;
+  height: 200px;
+}
